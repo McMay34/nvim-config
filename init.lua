@@ -30,7 +30,8 @@ local plugins = {
 
 	'lervag/vimtex',
 
-	'SirVer/ultisnips',
+	{ 'SirVer/ultisnips', enabled = false },
+--	'SirVer/ultisnips',
 	{
 	    'nvim-lualine/lualine.nvim',
 		dependencies = 'nvim-tree/nvim-web-devicons',
