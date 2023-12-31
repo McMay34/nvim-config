@@ -63,6 +63,9 @@ local plugins = {
 			}
 		}
 	},
+	"neovim/nvim-lspconfig",
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
 }
 
 require("lazy").setup(plugins)
@@ -99,9 +102,10 @@ vim.g.UltiSnipsJumpBackwardTrigger = '<s-tab>'
 vim.g.vimtex_view_method = 'zathura'
 vim.g.vimtex_quickfix_mode = 0
 
-vim.cmd("colorscheme gruvbox")
+-- vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme sonokai")
 
 
 -- syntax enable
 
-
+require("maessju.lspconfig")
